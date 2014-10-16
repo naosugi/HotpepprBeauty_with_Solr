@@ -91,7 +91,7 @@ for loc in minatoStore.df.L_location.values:
     c = c + 1
 c = 0
 for loc in tyuouStore.df.L_location.values:
-    loc200 = "fq={!geofilt}&sfield=L_location&pt=" + loc + "&d=0.5&"
+    loc200 = "fq={!geofilt}&sfield=L_location&pt=" + loc + "&d=0.2&"
     query = hb.makeQuery(DB='StoreData',
                          searchFields=['id'],
                          searchValues=['*'],

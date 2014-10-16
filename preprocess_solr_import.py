@@ -84,7 +84,6 @@ for line in file1:
     line = line.split('\t')
     for k in range(0, len(line)):
         line[k] = line[k].encode('utf-8')
-#        line[k] = line[k][1:]
     a = line[4].split('.')
     line[4] = float(a[0]) + float(a[1])/60 + float(a[2])/3600 + float(a[3])/360000
     a = line[5].split('.')
